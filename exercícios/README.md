@@ -51,19 +51,19 @@
 
 ### 5. Testar o Docker
 
-1. No terminal, execute o comando para rodar um contêiner de teste:
+1. No terminal, execute o comando para rodar um container de teste:
    
     ```bash
     docker run hello-world
     ```
 
-   Este comando faz o download de uma imagem de teste do Docker Hub e executa um contêiner que imprime uma mensagem de "**Hello from Docker!**".
+   Este comando faz o download de uma imagem de teste do Docker Hub e executa um container que imprime uma mensagem de "**Hello from Docker!**".
 
    ![Hello Docker](../imagens/hello-docker.png)
 
 ### 6. Verificação do Docker Engine
 
-1. Execute o comando abaixo para listar todos os contêineres ativos. Se não houver containers rodando, retornará uma lista vazia:
+1. Execute o comando abaixo para listar todos os containers ativos. Se não houver containers rodando, retornará uma lista vazia:
    
 
     ```bash
@@ -74,3 +74,83 @@
     ```bash
     docker ps -a
     ```
+
+# Docker Hub
+
+### O Docker Hub é um repositório de imagens Docker, onde é possível encontrar e baixar imagens de container que foram criadas e compartilhadas por outras pessoas.
+
+
+### 1. Procurarando Imagens
+
+#### Acesse [hub.docker.com](hub.docker.com) e use a barra de pesquisa para encontrar a imagem desejada.
+
+![Hello Docker](../imagens/docker-hub.png)
+
+### 2. Baixando Imagens
+
+#### Para baixar uma imagem, utilize o comando:
+
+```
+docker pull <nome-da-imagem>
+```
+
+#### Por exemplo, para baixar a imagem ubuntu:
+
+```
+docker pull ubuntu
+```
+
+# Dockerfile
+
+### Um Dockerfile é um arquivo que contém instruções que o Docker lê e executar uma ação, como instalar pacotes, copiar arquivos, definir comandos a serem executados no contêiner, entre outros, afim de criar uma imagem específica.
+
+## Criando um Dockerfile Simples
+
+#### Vamos criar um Dockerfile básico para construir uma imagem baseada no Alpine Linux.
+
+```dockerfile
+FROM alpine:latest
+
+RUN apk update && apk add bash
+
+CMD ["echo", "Hello World from Docker!"]
+```
+
+### Explicação dos Comandos
+1. FROM alpine
+
+    Indica a imagem base que será utilizada. Neste caso, usaremos a última versão (latest) da imagem alpine.
+
+2. RUN apk update && apk add bash
+
+    Executa comandos dentro do contêiner durante a construção da imagem. Aqui, iremos atualizar os pacotes do Alpine (apk update) e instalar o pacote bash (apk add bash).
+
+3. CMD ["echo", "Hello World from Docker!"]
+
+    Especifica o comando que será utilizado quando o contêiner é iniciado. Neste exemplo, estamos utilizando o comando echo para imprimir a mensagem "Hello World from Docker!".
+
+### Construindo a Imagem Docker
+
+1. Crie um arquivo chamado `Dockerfile` e copie o conteúdo acima para dentro dele.
+
+2. No terminal, navegue até o diretório onde o Dockerfile está localizado.
+
+3. Execute o comando a seguir para construir a imagem.
+
+```
+docker build -t minha-primeira-imagem
+```
+
+### Agora vamos testar a imagem construída
+
+1. Execute o seguinte comando:
+
+```
+docker run minha-primeira-imagem
+```
+
+2. A saída esperada deve ser:
+
+```
+Hello World from Docker!
+```
