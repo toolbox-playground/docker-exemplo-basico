@@ -1,0 +1,23 @@
+{
+  "name": "docker-exemplo-basico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "commit-and-tag-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toolbox-playground/docker-exemplo-basico.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toolbox-playground/docker-exemplo-basico/issues"
+  },
+  "homepage": "https://github.com/toolbox-playground/docker-exemplo-basico#readme",
+  "dependencies": {
+    "commit-and-tag-version": "^12.4.1"
+  }
+}
