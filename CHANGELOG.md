@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## 1.1.0 (2024-07-25)
+
+
+### Features
+
+* adicionando versionamento ([b2198f1](https://github.com/toolbox-playground/docker-exemplo-basico/commit/b2198f16f7b05908e94502cdc77add9426a52d83))
+
 ## 1.0.0 (2024-07-25)
 
 
