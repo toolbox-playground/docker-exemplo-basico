@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## 1.2.0 (2024-07-25)
+
+
+### Features
+
+* criando exercícios docker ([ff66bc3](https://github.com/toolbox-playground/docker-exemplo-basico/commit/ff66bc3aa7badbe9057401e5309c0972566b6648))
+
 ## 1.1.0 (2024-07-25)
 
 
