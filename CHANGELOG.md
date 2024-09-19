@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## 1.3.0 (2024-09-19)
+
+
+### Features
+
+* adicionando pipeline de segurança com gitleaks ([37f7e1a](https://github.com/toolbox-playground/docker-exemplo-basico/commit/37f7e1aafe3b79fb8e480d500152cc9f22224bbb))
+
 ## 1.2.0 (2024-07-25)
 
 
