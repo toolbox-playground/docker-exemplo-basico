@@ -2,6 +2,8 @@
 Este repositório oferece exercícios práticos em Docker. 
 Através de comandos básicos, intermediários e avançados. 
 
+
+
 ## Estrutura do repositório
 ```
 |__.github                          # Pasta com os arquivos de CI/CD para o GitHub Actions
