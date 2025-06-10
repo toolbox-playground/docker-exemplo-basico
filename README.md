@@ -1,15 +1,8 @@
 # docker-exemplo-basico
-Repositório exemplo para uso didático. Aprendizado de Docker
+Este repositório oferece exercícios práticos em Docker. 
+Através de comandos básicos, intermediários e avançados. 
 
-## O que irá encontrar no repositório?
-Neste repositório, temos exemplos básicos de execução de contêineres utilzando Docker.
-
-## Como configurar o seu ambiente
-
-### Pré Requisito
-Navegue até o diretório `exercícios`, abra o README.md contido na pasta e siga o passo a passo da instalação do Docker.
-
-### Estrutura do repositório
+## Estrutura do repositório
 ```
 |__.github                          # Pasta com os arquivos de CI/CD para o GitHub Actions
 |__exercicios                       # Exercícios 
@@ -24,11 +17,53 @@ Navegue até o diretório `exercícios`, abra o README.md contido na pasta e sig
 |__.versionrc                       # Arquivo necessário para configuração de versionamento
 ```
 
-### Como executar os exercícios
+## Pré-requesito
+## 1. Baixar o Docker Desktop
+Abra seu navegador web e acesse a página oficial de download do Docker. Baixe o Docker Desktop de acordo com o seu sistema operacional.
+Faça o download aqui → [Docker Desktop)](https://www.docker.com/products/docker-desktop/)
 
-- Navegue até o diretório do exercício desejado e construa a imagem utilizando o comando `docker build -t hello-docker .`
+## 2. Executar o Instalador
+1. Após o download, execute o arquivo 
 
-- Depois execute o contêiner utilizando o comando `docker run hello-docker`
+   ```Docker Desktop Installer.exe```
+
+2. Siga as instruções do instalador. Quando a instalação for concluida, clique em "Close"
+
+## 3. Finalizando a Instalação do Docker Desktop
+
+1. Após a instalação do Docker Desktop, procure por Docker e selecione "Docker Desktop" para abrir a ferramenta
+
+2. Durante a primeira execução, será solicitado para fazer login ou criar uma conta Docker.
+
+## 4. Verificação da Instalação
+
+1. Abra o terminal PowerShell (Terminal).
+
+2. Execute o comando para verificar a versão do Docker instalada:
+
+   ```docker --version```
+
+   Você deve ver uma saída semelhante a:
+
+    ```Docker version 20.10.8, build 3967b7d```
+
+## 5. Testando o Docker
+
+1. No terminal, execute o comando para rodar um container de teste:
+
+   ```docker run hello-world```
+
+   Este comando faz o download de uma imagem de teste do Docker Hub e executa um container que imprime uma mensagem de "Hello from Docker!".
+
+## 6. Verificação do Docker Engine
+
+1. Execute o comando abaixo para listar todos os containers ativos. Se não houver containers rodando, retornará uma lista vazia:
+
+   ```docker ps```
+
+2. Execute o comando abaixo para listar todos os contêineres, incluindo os que estão parados:
+
+    ```docker ps -a```
 
 
 ## Contribuindo
