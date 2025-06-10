@@ -1,7 +1,7 @@
 # Docker Hub
 O Docker Hub é um repositório de imagens Docker, onde é possível encontrar e baixar imagens de container que foram criadas e compartilhadas por outras pessoas.
 
-## 1. Procurarando Imagens
+## 1. Procurando Imagens
 
 Acesse [Docke Hub](hub.docker.com) e use a barra de pesquisa para encontrar a imagem desejada.
 
