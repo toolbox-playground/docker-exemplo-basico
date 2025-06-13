@@ -1,4 +1,5 @@
 # docker-exemplo-basico
+
 Este repositório oferece exercícios práticos em Docker. 
 Através de comandos básicos, intermediários e avançados. 
 
