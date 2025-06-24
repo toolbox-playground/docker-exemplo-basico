@@ -1,0 +1,112 @@
+# -------------------------------------------------------------
+# Segurança (ESSENCIAL: NUNCA VERSIONAR SENHAS, CHAVES, ETC.)
+# -------------------------------------------------------------
+.env
+.env.*
+config/*.ini
+*.key
+*.pem
+credentials.json
+secrets.yml
+
+# -------------------------------------------------------------
+# Gerenciadores de Pacotes e Cache de Linguagens
+# -------------------------------------------------------------
+
+# Python
+__pycache__/
+*.pyc
+*.pytest_cache/
+venv/
+.venv/
+pip-log.log
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.parcel-cache/ # Para Parcel
+
+# Java
+target/
+*.jar
+*.war
+*.ear
+*.class
+.gradle/
+build/
+# Para Maven
+pom.xml.tag
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# PHP (Composer)
+vendor/
+composer.lock # Descomente se não quiser versionar
+
+# Ruby (Bundler)
+vendor/bundle/
+.bundle/
+
+
+# Go
+# go.sum # Descomente se não quiser versionar
+# Para dependências vendored
+vendor/
+
+# -------------------------------------------------------------
+# Saídas de Build e Distribuição
+# -------------------------------------------------------------
+build/
+dist/
+out/
+tmp/
+*.zip
+*.tar.gz
+
+# -------------------------------------------------------------
+# Logs e Arquivos Temporários
+# -------------------------------------------------------------
+*.log
+logs/
+log/
+temp/
+tmp/
+
+# -------------------------------------------------------------
+# Arquivos de Sistema Operacional e IDEs
+# -------------------------------------------------------------
+.DS_Store # macOS
+Thumbs.db # Windows
+.vscode/ # Visual Studio Code (se as configs forem pessoais)
+.idea/ # IntelliJ IDEA
+*.iml # IntelliJ IDEA
+*.iws # IntelliJ IDEA
+*.ipr # IntelliJ IDEA
+*.sublime-project
+*.sublime-workspace
+*.swp # Vim swap files
+*.swo # Vim swap files
+
+# -------------------------------------------------------------
+# Específicos do Docker
+# -------------------------------------------------------------
+# Arquivos de override do Docker Compose para ambiente local de dev
+docker-compose.override.yml
+
+# Possíveis pastas de dados de volumes montados localmente
+# Ex: Para um volume de banco de dados, ou uploads
+data/db/
+uploads/
+.docker_build_cache/ # Cache de build do Docker no host
+
+# -------------------------------------------------------------
+# Outros (adapte conforme necessário)
+# -------------------------------------------------------------
+# Arquivos de testes de integração ou dados mockados que não precisam ser versionados
+test_data/
+coverage/ # Cobertura de testes
+.coverage # Cobertura de testes
